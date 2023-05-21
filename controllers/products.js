@@ -75,7 +75,7 @@ const getAllProduc = async(req, res) => {
     if (fealds) {
         // products = products.sort()
         // console.log(sort);
-        const fealdsList = fealds.split('و').join(' ')
+        const fealdsList = fealds.split(',').join(' ')
             // .split(',') دي عشان وانا بكتب في البوست مان افصل بينهم ب العلامه دي
         result = result.select(fealdsList)
     }
